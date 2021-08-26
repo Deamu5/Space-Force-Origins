@@ -1,0 +1,52 @@
+<html>
+
+<head>
+    <title>Sky Force</title>
+    <style>
+        canvas {
+            width: 100%;
+            height: 100%
+        }
+        #overlay {
+            position: absolute;
+           
+            background-color: rgba(241, 241, 238, 0.7);
+            color: white;
+            font-family: sans-serif;
+        }
+        input{
+            color: white;
+            font-family: sans-serif;
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+        body, html {
+            margin: 0;
+             background-image: url("./models/download.jpeg");
+            height: 100%; 
+           
+        }
+        
+
+    </style>
+</head>
+
+<body>
+    <!-- <video autoplay muted loop id="myVideo">
+        <source src="./stars.mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+    </video> -->
+      
+    <div id="overlay">
+        <div style="color:green;">Health: <input style="color:green;" type="text" id="health" size="5%" value="0"></div>
+        <div style="color:rgb(0, 194, 253)">Score: <input style="margin-left:4px;color:rgb(0, 194, 253);" type="text" id="score" size="5%"value="0"></div>
+    </div>
+
+
+    <script src="./js/three.js"></script>
+    <!-- <script src="./js/OrbitControls.js"></script> -->
+    <script src="./js/GLTFLoader.js"></script>
+    <script src="./js/main.js">      
+    </script>
+</body>
+
+</html>
